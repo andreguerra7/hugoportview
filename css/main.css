@@ -70,7 +70,7 @@ h2 {
     line-height: 20px;
     font-weight: 600;
     margin: 0;
-    color: #555;
+    color: white;
     text-align: center;
 }
 
@@ -161,6 +161,11 @@ h6 {
     background-image: url('../img/cubebg2.png');
     width: 100%;
 }
+.cubebg {
+    background-image: url('../img/cubebg.png');
+    width: 100%;
+}
+
 
 .HomeSec {
     height: 100%;
@@ -195,6 +200,9 @@ h6 {
     width: 100%;
 }
 
+#secFooter {
+    background-color: white;
+}
 
 /*portfolio works*/
 
@@ -256,6 +264,17 @@ hr {
     min-height: 30%;
     height: 30%;
     padding: 2% 2% 2% 2%;
+}
+
+.imgPortOm{
+    border: 1px solid #32416c;
+    position: relative;
+    width: 100%;
+    min-width: 100%
+    min-height: 42%;
+    height: 42%;
+    padding: 2% 2% 2% 2%;
+
 }
 
 .imgPort {
@@ -354,7 +373,7 @@ hr {
         margin-bottom: 100px;
         color: rgba(255, 255, 255, 0.9);
     }
-}
+
 
 @media (max-width: 640px) {
     #intro .intro-body H1 {
@@ -369,12 +388,12 @@ hr {
     opacity: 0.5;
 }
 
-footer {
+/* footer {
     z-index: 3000;
     position: relative;
     background: #ffffff;
     padding: 40px 0px;
-}
+}*/
 
 .btnHomePrimary {
     background-color: rgba(255, 255, 255, 0.08);
@@ -414,13 +433,13 @@ footer {
 }
 
 .fa-envelope-o {
-    color: #4ec3cd;
+    color: white;
     font-size: 22px;
     display: block;
     padding-top: 15px;
     width: 60px;
     height: 60px;
-    border: 2px solid #4ec3cd;
+    border: 2px solid white;
     border-radius: 30px;
     margin: auto;
 }
