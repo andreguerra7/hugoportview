@@ -1,39 +1,49 @@
+/*Fonts*/
+
 @font-face {
     font-family: lowveticaultrabold;
-    src: url('../fonts/fonts/Lowvetica_Ultra_Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/fonts/Lowvetica_Ultra_Bold.eot');
+    /* IE9 Compat Modes */
     src: url('../fonts/fonts/Lowvetica_Ultra_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/fonts/Lowvetica_Ultra_Bold.woff2') format('woff2'), /* Super Modern Browsers */
     url('../fonts/fonts/Lowvetica_Ultra_Bold.woff') format('woff'), /* Pretty Modern Browsers */
     url('../fonts/fonts/Lowvetica_Ultra_Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/fonts/Lowvetica_Ultra_Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    url('../fonts/fonts/Lowvetica_Ultra_Bold.svg#svgFontName') format('svg');
+    /* Legacy iOS */
     font-weight: bold;
 }
 
 @font-face {
     font-family: lowvetica;
-    src: url('../fonts/fonts/Lowvetica.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/fonts/Lowvetica.eot');
+    /* IE9 Compat Modes */
     src: url('../fonts/fonts/Lowvetica.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/fonts/Lowvetica.woff2') format('woff2'), /* Super Modern Browsers */
     url('../fonts/fonts/Lowvetica.woff') format('woff'), /* Pretty Modern Browsers */
     url('../fonts/fonts/Lowvetica.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/fonts/Lowvetica.svg#svgFontName') format('svg'); /* Legacy iOS */
+    url('../fonts/fonts/Lowvetica.svg#svgFontName') format('svg');
+    /* Legacy iOS */
     font-weight: none;
 }
 
-
 @font-face {
     font-family: lowveticabold;
-    src: url('../fonts/fonts/LowveticaBold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/fonts/LowveticaBold.eot');
+    /* IE9 Compat Modes */
     src: url('../fonts/fonts/LowveticaBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/fonts/LowveticaBold.woff2') format('woff2'), /* Super Modern Browsers */
     url('../fonts/fonts/LowveticaBold.woff') format('woff'), /* Pretty Modern Browsers */
     url('../fonts/fonts/LowveticaBold.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/fonts/LowveticaBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    url('../fonts/fonts/LowveticaBold.svg#svgFontName') format('svg');
+    /* Legacy iOS */
     font-weight: bold;
 }
 
 
-body, html {
+/*Base*/
+
+body,
+html {
     font-family: 'Open Sans', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
@@ -44,11 +54,10 @@ body, html {
     overflow-x: hidden;
 }
 
- h1 {
-  font-family: 'Open Sans', sans-serif;
+h1 {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: white;
-
 }
 
 h1 strong {
@@ -64,15 +73,18 @@ h2 {
     color: #555;
     text-align: center;
 }
+
 h3 {
     font-size: 16px;
     font-weight: 700;
     color: #555;
 }
+
 h4 {
     font-weight: 500;
     color: #555;
 }
+
 h5 {
     text-transform: uppercase;
     font-weight: 700;
@@ -85,13 +97,55 @@ h6 {
     color: white;
 }
 
+
+/*bottons btns*/
+
 .btn-primary {
     background-color: rgba(255, 0, 255, 0.5);
     padding: 1% 1%;
 }
 
-#divHomeSec {
+.divBtnTitle {
+    text-align: center;
+}
 
+.btnPort {
+    font-family: 'lowveticaultrabold', Fallback, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    vertical-align: central;
+    position: relative;
+    z-index: 2;
+    width: 30%;
+    padding-top: 1px;
+    margin-top: 0.3%;
+    border: 2px solid #33426d;
+}
+
+.btn-defaultBlue {
+    color: #f6f6f6;
+    background-color: #152535;
+    border-color: #33426d;
+    padding: 12px 24px;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn-defaultBlue:hover,
+.btn-defaultBlue:focus,
+.btn-defaultBlue.focus,
+.btn-defaultBlue:active,
+.btn-defaultBlue.active {
+    color: #f6f6f6;
+    background-color: #0e1d2b;
+    border-color: #33426d;
+}
+
+
+/*structure*/
+
+#divHomeSec {
     position: absolute;
     z-index: 3000;
     text-align: center;
@@ -105,9 +159,10 @@ h6 {
 
 .cube2bg {
     background-image: url('../img/cubebg2.png');
+    width: 100%;
 }
 
-#divHomeImg {
+.HomeSec {
     height: 100%;
     margin: 0 auto;
     width: 100%;
@@ -116,15 +171,7 @@ h6 {
     z-index: 2000;
 }
 
-.divHomeSec {
-    height: 100%;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1920px;
-    position: relative;
-    z-index: 2000;
-}
-.divHomeSec article {
+.HomeSec article {
     height: 50%;
     position: absolute;
     top: 25%;
@@ -142,7 +189,6 @@ h6 {
     z-index: 2000;
 }
 
-
 .divPortSec article {
     height: 100%;
     position: absolute;
@@ -150,18 +196,16 @@ h6 {
 }
 
 
-/*imported from template*/
+/*portfolio works*/
+
 .divWorks {
     font-family: 'lowveticaultrabold', Fallback, sans-serif;
-    text-align:center;
+    text-align: center;
     color: white;
 }
-.divWorks h4{
-     color: white;
-}
 
-.divBtnTitle {
-    text-align:center;
+.divWorks h4 {
+    color: white;
 }
 
 hr {
@@ -194,7 +238,7 @@ hr {
     padding-bottom: 1%;
 }
 
-.imgPortLogo  {
+.imgPortLogo {
     border: 1px solid #32416c;
     position: relative;
     width: 70%;
@@ -204,22 +248,33 @@ hr {
     padding-top: 1%;
     padding-bottom: 1%;
 }
+.imgPortOutros {
+    border: 1px solid #32416c;
+    position: relative;
+    width: 100%;
+    min-width: 100%
+    min-height: 30%;
+    height: 30%;
+    padding: 2% 2% 2% 2%;
+}
+
+.imgPort {
+    width: 100%;
+    max-height: 70%;
+}
 
 .portLogos {
     text-align: center;
     margin-top: 15%;
 }
 
-.divLogoText{
-    font-family: 'lowvetica', Fallback, sans-serif;
-     color: white;
-     font-size: 140%;
+.divLogoText {
+    font-family: 'lowveticabold', Fallback, sans-serif;
+    color: white;
+    font-size: 140%;
     margin-top: 3%;
+}
 
-}
-.imgPort {
-    width: 100%;
-}
 
 .portSkills {
     font-family: 'lowveticabold', Fallback, sans-serif;
@@ -228,33 +283,36 @@ hr {
     color: white;
 }
 
-
 .portIcon {
     color: #33426b;
     padding-top: 2%;
 }
+
 .portIcon:hover {
     color: #33426b;
 }
 
-.portIcon:focus, .portIcon:active:focus, .portIcon.active:focus {
-     color: #33426b;
- }
-
-
-.btnPort {
-    font-family: 'lowveticaultrabold', Fallback, sans-serif;
-    font-size: 300%;
-    text-align: center;
-    vertical-align: central;
-    position: relative;
-    z-index: 2;
-    width: 30%;
-    padding-top: 1px;
-    margin-top: 0.3%;
-    border: 2px solid #33426d;
+.portIcon:focus,
+.portIcon:active:focus,
+.portIcon.active:focus {
+    color: #33426b;
 }
 
+
+/*tooltips*/
+
+.imgPortLogo+.tooltip>.tooltip-inner {
+    color: #f6f6f6;
+    background-color: #152535;
+    border-color: #33426d;
+    padding: 15px;
+    font-size: 13px;
+    transition: all 0.5s;
+    padding: 5px;
+}
+
+
+/*imported from template + changes*/
 
 .brand-heading {
     color: #33406d;
@@ -268,59 +326,45 @@ hr {
 #intro .intro-body {
     vertical-align: middle;
 }
+
 #intro .intro-body H1 {
     font-size: 76px;
     font-weight: 700;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
 }
-    #intro .intro-body .brand-heading {
-        color: #33406d;
-        text-shadow: 0 4px #152535;
-    }
+
+#intro .intro-body .brand-heading {
+    color: #33406d;
+    text-shadow: 0 4px #152535;
+}
+
 #intro .intro-body .intro-text {
     font-size: 18px;
 }
 
 @media(min-width:768px) {
-#intro {
-    height: 100%;
-    padding: 0;
+    #intro {
+        height: 100%;
+        padding: 0;
+    }
+    #intro .intro-body .intro-text {
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 100px;
+        color: rgba(255, 255, 255, 0.9);
+    }
 }
-#intro .intro-body .intro-text {
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin-bottom: 100px;
-    color: rgba(255,255,255,0.9);
-}
+
 @media (max-width: 640px) {
-#intro .intro-body H1 {
-    font-size: 5em;
-}
-}
-
-.btn-defaultBlue {
-    color: #f6f6f6;
-    background-color: #152535;
-    border-color: #33426d;
-    padding: 12px 24px;
-    margin: 0 8px;
-    font-size: 18px;
-    transition: all 0.5s;
-}
-
-.btn-defaultBlue:hover,
-.btn-defaultBlue:focus,
-.btn-defaultBlue.focus,
-.btn-defaultBlue:active,
-.btn-defaultBlue.active {
-    color: #f6f6f6;
-    background-color: #0e1d2b;
-    border-color: #33426d;
+    #intro .intro-body H1 {
+        font-size: 5em;
+    }
 }
 
 
 /*imported from heroes idle*/
+
 .social li a:hover {
     opacity: 0.5;
 }
