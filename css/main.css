@@ -316,6 +316,21 @@ hr {
 .portIcon.active:focus {
     color: #33426b;
 }
+.portIcon2 {
+    color: #33426b;
+    padding-top: 2%;
+}
+
+.portIcon2:hover {
+    color: #33426b;
+}
+
+.portIcon2:focus,
+.portIcon2:active:focus,
+.portIcon2.active:focus {
+    color: #33426b;
+}
+
 
 
 /*tooltips*/
@@ -362,6 +377,7 @@ hr {
     font-size: 18px;
 }
 
+/*Mobile fixes*/
 @media(min-width:768px) {
     #intro {
         height: 100%;
@@ -371,14 +387,102 @@ hr {
         font-size: 18px;
         letter-spacing: 1px;
         margin-bottom: 100px;
-        color: rgba(255, 255, 255, 0.9);
     }
+}
 
-
-@media (max-width: 640px) {
-    #intro .intro-body H1 {
+@media (max-width: 767px) {
+    #intro .intro-body h1 {
         font-size: 5em;
     }
+
+h2 {
+    font-size: 12px;
+}
+h4 {
+    font-size: 10px;
+}
+
+.btnPort {
+    font-family: 'lowveticaultrabold', Fallback, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    vertical-align: central;
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    padding-top: 1px;
+    border: 2px solid #33426d;
+}
+
+
+.divLogoText {
+    font-family: 'lowveticabold', Fallback, sans-serif;
+    color: white;
+    font-size: 80%;
+    margin-top: 1%;
+}
+
+
+.divPortImg {
+    border: 1px solid #32416c;
+    position: relative;
+    width: 80%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.imgPort {
+    width: 100%;
+    max-height: 80%;
+}
+
+
+.imgPortOutros {
+    border: 1px solid #32416c;
+    position: relative;
+    min-height: 15%;
+    max-height:15%;
+    height: 15%;
+    width: auto;
+    padding: 2% 2% 2% 2%;
+}
+
+.imgPortLogo {
+    border: 1px solid #32416c;
+    position: relative;
+    min-height: 13%;
+    height: 13%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.portLogos {
+    text-align: center;
+    margin-top: 5%;
+}
+
+ .col-sm-4 {
+    width: auto;
+} 
+
+.imgPortOm{
+    border: 1px solid #32416c;
+    position: relative;
+    height: 25%;
+    width: auto;
+    padding: 2% 2% 2% 2%;
+
+}
+
+.portIcon {
+
+position: absolute;
+bottom: 1%;
+align-content: center;
+}
+.portIcon2 {
+
+}
+
 }
 
 
