@@ -1,17 +1,15 @@
 
 var mMedia = window.matchMedia( "(max-width: 768px)" );
 if (mMedia.matches) {
-  //scrollify
+   //scrollify
 $(function() {
-  $.scrollify.update();
     $.scrollify({
         section: "section",
-        scrollSpeed: 1000,
+        scrollSpeed: 1100,
         touchScroll: true,
+        easing: "easeOutExpo",
     });
 });
-
-   
 }
 else {
  // Page scroll
@@ -33,7 +31,7 @@ $('a.page-scroll').click(function() {
 $(function() {
     $.scrollify({
         section: "section",
-        scrollSpeed: 1000,
+        scrollSpeed: 1100,
         touchScroll: true,
     });
 });
