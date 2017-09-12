@@ -1,31 +1,6 @@
 
-var mMedia = window.matchMedia( "(max-width: 768px)" );
+var mMedia = window.matchMedia( "(min-width: 768px)" );
 if (mMedia.matches) {
-   //scrollify
-$(function() {
-    $.scrollify({
-        section: "section",
-        scrollSpeed: 1100,
-        touchScroll: true,
-        easing: "easeOutExpo",
-    });
-});
-}
-else {
- // Page scroll
-$('a.page-scroll').click(function() {
-  
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-            $('html,body').animate({
-                scrollTop: target.offset().top - 40
-            }, 900);
-            return false;
-        }
-    }
-});
 
 //scrollify
 $(function() {
@@ -36,9 +11,35 @@ $(function() {
     });
 });
 
+} else {
+
+//scrollify
+$(function() {
+    $.scrollify({
+        section: "section",
+        scrollSpeed: 1100,
+        touchScroll: false,
+    });
+});
+
+
 
 }
 
+ // Page scroll
+$('a.page-scroll').click(function() {
+  
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top - 0
+            }, 900);
+            return false;
+        }
+    }
+});
 
 //ToolTips
 $('.toolTipC').tooltip({ title: "C# é uma linguagem de programação orientada a objetos desenvolvida pela Microsoft. Mira combinar o poder da computação de C++ com a usuabilidade do Visual Basic.", placement: "auto" });
