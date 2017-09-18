@@ -13,14 +13,6 @@ $(function() {
 
 } else {
 
-//scrollify
-$(function() {
-    $.scrollify({
-        section: "section",
-        scrollSpeed: 1100,
-        touchScroll: false,
-    });
-});
 
 
 
@@ -34,7 +26,7 @@ $('a.page-scroll').click(function() {
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
             $('html,body').animate({
-                scrollTop: target.offset().top - 0
+                scrollTop: target.offset().top - 1
             }, 900);
             return false;
         }

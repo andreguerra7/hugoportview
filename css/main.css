@@ -465,7 +465,9 @@ hr {
     #intro .intro-body h1 {
         font-size: 5em;
     }
-
+    .intro-text{
+        padding: 1% 1% 1% 1%;
+    }
 h2 {
     font-size: 12px;
 
@@ -485,10 +487,13 @@ hr {
     border: 0;
 }
 
+
+
+
 .hrPort {
     position: relative;
     z-index: 1;
-    width: 70%;
+    width: 80%;
     height: 0.5%;
     border: 0.5px solid #32416c;
     border-radius: 5px;
@@ -504,7 +509,7 @@ hr {
     z-index: 2;
     width: 50%;
     padding-top: 1px;
-    border: 2px solid #33426d;
+    border: 1px solid #33426d;
 }
 
 .btn-defaultBlue {
@@ -521,6 +526,7 @@ hr {
     color: white;
     font-size: 80%;
     margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 
@@ -576,15 +582,22 @@ hr {
 
 }
 
+#divPortIcon {
+    text-align: center;
+    align-items: center;    
+}
+
+.fa-4x{
+    font-size: 3em;
+}
+
 .portIcon {
 
 position: absolute;
 bottom: 1%;
-right: 45%;
+right: 46%;
 }
-.portIcon2 {
 
-}
 
 }
 
